@@ -35,3 +35,9 @@ buttTwo.onclick = function () {
 		}
 	
 }
+
+//Задание 2.3 Модальное окно при открытии страницы
+
+window.onload = function() {
+	alert('Привет, мир!');
+}
