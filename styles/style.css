@@ -1,5 +1,31 @@
-.my_block_shadow{
--webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
--moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+/*Рамки блоков*/
+.my_block_border_solid{
+	border:1px solid black;
+}
+
+.my_block_border_dashed{
+	border:1px dashed black;
+}
+
+/*Цветв кнопок*/
+.btn.btn_one{
+	background-color:yellow !important;
+}
+.btn.btn_two{
+	background-color:green !important;
+}
+
+/*Цвета блоков*/
+.block_two_color{
+	background-color:#ff61e5;
+}
+.block_three_color{
+	background-color:#2fcbfa;
+}
+.block_four_color{
+	background-color:#ffeb36;
+}
+
+.my_block_height{
+	    height: 50px;
 }
