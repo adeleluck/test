@@ -38,6 +38,13 @@ buttTwo.onclick = function () {
 
 //Задание 2.3 Модальное окно при открытии страницы
 
-window.onload = function() {
-	alert('Привет, мир!');
-}
+const someModalDialog = document.getElementById("some-modal-dialog");
+const acceptSomeModalDialogButton = document.getElementById("some-modal-dialog-accept-button");
+
+	acceptSomeModalDialogButton.addEventListener("click", () => {
+		someModalDialog.close();
+	});
+
+    window.onload = function() {
+        someModalDialog.showModal();
+    }
