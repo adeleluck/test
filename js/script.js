@@ -1,14 +1,37 @@
-//Задание 2.1 Скрытие блока с заголовком
-var block_hide_show = true;
-butt_one = document.getElementById('butt_one');
-block_one = document.getElementById('block_one');
+//Задание 2.1 Скрыть/Показать блок с заголовком
 
-butt_one.onclick = function(){
-	if (block_hide_show){
-			block_one.classList.add("d-none");
-			block_hide_show = false;
+var blockHideShow = true;
+buttOne = document.getElementById('butt_one');
+blockOne = document.getElementById('block_one');
+
+buttOne.onclick = function(){
+	if (blockHideShow){
+			blockOne.classList.add("d-none");
+			blockHideShow = false;
 	}else{
-				block_one.classList.remove("d-none");
-				block_hide_show = true;
+				blockOne.classList.remove("d-none");
+				blockHideShow = true;
 		}
+}
+
+//Задание 2.2 Поменять блоки местами
+
+var changePosition = true
+
+buttTwo = document.getElementById('butt_two');
+
+var itemList = document.querySelector('.itemList');
+var item = document.querySelectorAll('.item');
+
+buttTwo.onclick = function () {
+	
+		if(changePosition){
+			itemList.insertBefore(item[2], item[1]);
+			changePosition = false;
+			
+		}else{
+			itemList.insertBefore(item[1], item[2]);
+			changePosition = true;
+		}
+	
 }
