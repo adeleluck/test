@@ -9,11 +9,13 @@
   <title>Форма</title>
 </head>
 <body>
-	<form id="my-form" method="post">
+<section class="my-form">
+	<form method="post">
 	  <div class="row mx-0 align-items-center px-4">
+	  
 		<div class="col-12 my-1">
 		  <label for="FormCustomSelectOne">Выпадающий список №1</label>
-		  <select class="custom-select mr-sm-2" id="FormCustomSelectOne" required>
+		  <select class="custom-select mr-sm-2" id="FormCustomSelectOne" required name="FormCustomSelectOne">
 			<option selected value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -21,9 +23,10 @@
 			<option value="5">5</option>
 		  </select>
 		</div>
+		
 		<div class="col-12 my-1">
 		  <label for="FormCustomSelectTwo">Выпадающий список №2</label>
-		  <select class="custom-select mr-sm-2" id="FormCustomSelectTwo" required>
+		  <select class="custom-select mr-sm-2" id="FormCustomSelectTwo" required name="FormCustomSelectTwo">
 			<option selected value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -31,9 +34,10 @@
 			<option value="5">5</option>
 		  </select>
 		</div>
+		
 		<div class="col-12 my-1">
 		  <label for="FormCustomSelectThree">Выпадающий список №3</label>
-		  <select class="custom-select mr-sm-2" id="FormCustomSelectThree" required>
+		  <select class="custom-select mr-sm-2" id="FormCustomSelectThree" required name="FormCustomSelectThree">
 			<option selected value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -41,9 +45,10 @@
 			<option value="5">5</option>
 		  </select>
 		</div>
+		
 		<div class="col-12 my-1">
 		  <label for="FormCustomSelectFour">Выпадающий список №4</label>
-		  <select class="custom-select mr-sm-2" id="FormCustomSelectFour" required>
+		  <select class="custom-select mr-sm-2" id="FormCustomSelectFour" required name="FormCustomSelectFour">
 			<option selected value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -51,9 +56,10 @@
 			<option value="5">5</option>
 		  </select>
 		</div>
+		
 		<div class="col-12  my-1">
 		  <label for="FormCustomSelectFive">Выпадающий список №5</label>
-		  <select class="custom-select mr-sm-2" id="FormCustomSelectFive" required>
+		  <select class="custom-select mr-sm-2" id="FormCustomSelectFive" required name="FormCustomSelectFive">
 			<option selected value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -64,11 +70,12 @@
 		
 		<div class="col-12 col-sm-6 my-1">
 			<label for="myInputOne">Поле для ввода №1</label>
-			<input id="myInputOne" type="text" class="form-control" placeholder="Введите значение №1" required >
+			<input id="myInputOne" type="text" class="form-control" placeholder="Введите значение №1" required name="myInputOne">
 		</div>
+		
 		<div class="col-12 col-sm-6 my-1">
 			<label for="myInputTwo">Поле для ввода №2</label>
-			<input id="myInputTwo" type="text"  class="form-control" placeholder="Введите значение №2" required >
+			<input id="myInputTwo" type="text"  class="form-control" placeholder="Введите значение №2" required name="myInputTwo">
 		</div>
 
 		<div class="col-6 my-1">
@@ -77,6 +84,12 @@
 		
 	   </div>
 	</form>	
+</section>	
+	<div class="results row mx-0 col-12 px-4">
+	  <h2>Результат:</h2>
+	  <pre></pre>
+	</div>
+	
   <script src="js/jquery-3.7.0.min.js"></script>
   <script src="library/bootstrap-5.3.1/js/bootstrap.js"></script>
   <script src="js/script.js"></script>	

@@ -51,6 +51,7 @@ const acceptMyModalDialogButton = document.getElementById("my-modal-dialog-accep
 	
 //Задание 2.4 Форма
 
+/*
 const form = document.querySelector('my-form');
 
 form.addEventListener('submit', (e) => {
@@ -63,6 +64,34 @@ form.addEventListener('submit', (e) => {
   const selectFive = form.elements['FormCustomSelectFive'];
   const inputOne = form.elements['myInputOne'];
   const inputTwo = form.elements['myInputTwo'];
+  
+  
+  valid = true;
+  if (inputOne.value == ""){
+		alert ( "Пожалуйста заполните поле 'Поле для ввода № 1'." );
+		valid = false;
+  }
+   if (inputTwo.value == ""){
+		alert ( "Пожалуйста заполните поле 'Поле для ввода № 2'." );
+		valid = false;
+  }
+	
+	return valid;	
 	
 });
-	
+*/
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+  
+  const data = new FormData(event.target);
+  
+  const value  = Object.fromEntries(data.entries());
+  
+  const results = document.querySelector('.results pre');
+  results.innerText = JSON.stringify(value , null, 2);
+}
+
+const form = document.querySelector('.my-form');
+form.addEventListener('submit', handleFormSubmit);
+
