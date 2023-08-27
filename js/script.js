@@ -38,13 +38,31 @@ buttTwo.onclick = function () {
 
 //Задание 2.3 Модальное окно при открытии страницы
 
-const someModalDialog = document.getElementById("some-modal-dialog");
-const acceptSomeModalDialogButton = document.getElementById("some-modal-dialog-accept-button");
+const myModalDialog = document.getElementById("my-modal-dialog");
+const acceptMyModalDialogButton = document.getElementById("my-modal-dialog-accept-button");
 
-	acceptSomeModalDialogButton.addEventListener("click", () => {
-		someModalDialog.close();
+	acceptMyModalDialogButton.addEventListener("click", () => {
+		myModalDialog.close();
 	});
 
     window.onload = function() {
-        someModalDialog.showModal();
+        myModalDialog.showModal();
     }
+	
+//Задание 2.4 Форма
+
+const form = document.querySelector('my-form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();  
+  
+  const selectOne = form.elements['FormCustomSelectOne'];
+  const selectTwo = form.elements['FormCustomSelectTwo'];
+  const selectThree = form.elements['FormCustomSelectThree'];
+  const selectFour = form.elements['FormCustomSelectFour'];
+  const selectFive = form.elements['FormCustomSelectFive'];
+  const inputOne = form.elements['myInputOne'];
+  const inputTwo = form.elements['myInputTwo'];
+	
+});
+	
